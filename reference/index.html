@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Hyunji & Byeongheon</title>
+    <meta name="description" content="We are getting married!" />
+    <meta property="og:title" content="Hyunji & Byeongheon" />
+    <meta property="og:description" content="We are getting married!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://imagedelivery.net/9PYUDgg_yiUa2u-j77sFBg/b6f7d86e-8968-482f-1c7e-b01b56c58300/tog" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="card-shell">
+      <section class="intro-screen" data-section="cover">
+        <img class="intro-photo" data-image="cover" alt="웨딩 커버 사진" />
+        <div class="intro-dim"></div>
+        <div class="petal-layer" id="petalLayer" aria-hidden="true"></div>
+        <div class="intro-copy" data-animate-group>
+          <p class="intro-date" data-text="dateText" data-animate></p>
+          <h1>
+            <span data-text="brideEnglish" data-animate></span>
+            <span data-animate>&</span>
+            <span data-text="groomEnglish" data-animate></span>
+          </h1>
+          <p data-text="venueLine" data-animate></p>
+        </div>
+      </section>
+
+      <section class="section invitation" data-section="invitation" data-animate-group>
+        <p class="tiny-title" data-animate>Invitation</p>
+        <h2 data-animate>소중한 분들을 모십니다</h2>
+        <div class="invitation-body" data-text="invitation" data-animate></div>
+      </section>
+
+      <section class="thanks-photo-section" data-section="thanksPhoto" data-animate-group>
+        <div class="thanks-message" data-text="thanksMessage" data-animate></div>
+        <img data-image="thanks" alt="함께 선 신랑 신부 사진" data-animate />
+      </section>
+
+      <section class="date-reveal-section" data-section="weddingDay" data-animate-group>
+        <img class="date-reveal-bg" data-image="dateBackground" alt="날짜 배경 사진" />
+        <div class="date-reveal-overlay" data-animate></div>
+        <div class="date-card">
+          <p data-text="dateMonth" data-animate></p>
+          <strong data-text="dateYear" data-animate></strong>
+        </div>
+      </section>
+
+      <section class="section about-section" data-section="aboutUs" data-animate-group>
+        <div class="parents" id="parents" data-animate></div>
+        <p class="tiny-title" data-animate>About Us</p>
+        <h2 data-text="aboutTitle" data-animate></h2>
+        <div class="about-list" id="aboutList" data-animate-list></div>
+      </section>
+
+      <section class="section gallery-section" data-section="gallery" data-animate-group>
+        <p class="tiny-title" data-animate>Gallery</p>
+        <h2 data-animate>우리의 순간들</h2>
+        <div class="gallery-grid" id="galleryGrid" data-animate-list></div>
+        <div class="gallery-grid gallery-extra" id="galleryExtra" data-animate-list hidden></div>
+        <button class="gallery-toggle" id="galleryToggle" type="button" data-animate aria-expanded="false">
+          <span aria-hidden="true">⌄</span>
+          <strong>더 보기</strong>
+        </button>
+      </section>
+
+      <section class="section gift-section" data-section="gift" data-animate-group>
+        <p class="tiny-title" data-animate>Gift</p>
+        <h2 data-text="giftTitle" data-animate></h2>
+        <p class="muted" data-text="giftDescription" data-animate></p>
+        <div class="account-list" id="accountList" data-animate-list></div>
+      </section>
+
+      <section class="section guestbook-section" data-section="guestbook" data-animate-group>
+        <p class="tiny-title" data-animate>Guestbook</p>
+        <h2 data-text="guestbookTitle" data-animate></h2>
+        <p class="muted" data-text="guestbookDescription" data-animate></p>
+        <button class="primary-button guestbook-open" id="openGuestbook" type="button" data-animate>메시지 남기기</button>
+        <div class="guestbook-list" id="guestbookList" data-animate-list></div>
+      </section>
+
+      <section class="section quote-section" data-section="quote" data-animate-group>
+        <div class="quote-photo" data-animate>
+          <img data-image="quote" alt="인사말 배경 사진" />
+        </div>
+        <div class="quote-text" data-text="quote" data-animate></div>
+      </section>
+
+      <section class="section disabled-section" data-section="disabledDemo" data-animate-group>
+        <p class="tiny-title" data-animate>Disabled</p>
+        <h2 data-animate>비활성화된 항목</h2>
+        <button class="primary-button" type="button" disabled data-animate>연락처 정보 없음</button>
+        <button class="secondary-button" type="button" disabled data-animate>영상 준비중</button>
+      </section>
+
+      <section class="share-section">
+        <button class="kakao-button" id="kakaoShare" type="button" disabled>
+          <span>카카오톡으로 청첩장 전하기</span>
+          <span aria-hidden="true">↗</span>
+        </button>
+        <button class="primary-button copy-button" id="copyLink" type="button">
+          <span>청첩장 주소 복사하기</span>
+          <span aria-hidden="true">□</span>
+        </button>
+      </section>
+
+    </main>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" type="button">닫기</button>
+      <button class="lightbox-prev" type="button">이전</button>
+      <img alt="확대된 웨딩 사진" />
+      <button class="lightbox-next" type="button">다음</button>
+    </div>
+
+    <div class="modal" id="guestbookModal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="guestbookModalTitle">
+        <button class="modal-close" type="button" data-close-modal aria-label="닫기">×</button>
+        <p class="tiny-title">Guestbook</p>
+        <h2 id="guestbookModalTitle">축하 메시지</h2>
+        <form id="guestbookForm">
+          <label>
+            성함
+            <input name="name" type="text" placeholder="성함을 입력해 주세요" required />
+          </label>
+          <label>
+            비밀번호
+            <input name="password" type="password" placeholder="삭제할 때 사용할 비밀번호" required />
+          </label>
+          <label>
+            메시지
+            <textarea name="message" rows="5" placeholder="따뜻한 축하 메시지를 남겨주세요" required></textarea>
+          </label>
+          <button class="primary-button" type="submit">작성 완료</button>
+        </form>
+      </section>
+    </div>
+
+    <div class="modal" id="deleteGuestbookModal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-delete-modal></div>
+      <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="deleteGuestbookModalTitle">
+        <button class="modal-close" type="button" data-close-delete-modal aria-label="닫기">×</button>
+        <p class="tiny-title">Delete</p>
+        <h2 id="deleteGuestbookModalTitle">메시지 삭제</h2>
+        <p class="muted">작성할 때 입력한 비밀번호를 입력해 주세요.</p>
+        <form id="deleteGuestbookForm">
+          <label>
+            비밀번호
+            <input name="password" type="password" placeholder="비밀번호" required />
+          </label>
+          <p class="modal-error" id="deleteGuestbookError"></p>
+          <button class="primary-button" type="submit">삭제하기</button>
+        </form>
+      </section>
+    </div>
+
+    <script src="photos.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

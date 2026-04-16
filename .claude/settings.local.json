@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk 'NR>=354 && NR<=360 {print NR\": \"$0}' /Users/macbk/Works/gitRepo/gitJs/sbx2604_hj_mobile/index.html)",
+      "Bash(python3)"
+    ]
+  }
+}
