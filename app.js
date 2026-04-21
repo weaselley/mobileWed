@@ -1211,6 +1211,16 @@ function initEventBindings() {
   window.addEventListener("orientationchange", function() {
     setTimeout(setHeroHeight, 100);
   });
+
+  document.addEventListener("keydown", function(e) {
+    if ((e.ctrlKey || e.metaKey) && (e.key === "=" || e.key === "-" || e.key === "0" || e.key === "+" || e.key === "_")) {
+      e.preventDefault();
+    }
+  });
+
+  window.addEventListener("wheel", function(e) {
+    if (e.ctrlKey) e.preventDefault();
+  }, { passive: false });
 }
 
 function initApp() {

@@ -68,7 +68,7 @@ window.cardContent = {
       intro: "Dear Everyone,",
       paragraphs: [
         "We are so happy to have found our lifelong partners in one another.",
-        "In lieu of a traditional wedding,\nwe are celebrating our union\nwith a simple family gathering.\nWe ask for your kind blessings\nas we begin this new chapter.",
+        "While it is our deepest wish\nto celebrate this joyous occasion\nwith all those who have supported us,\nwe have decided to hold an intimate ceremony\nwith our family.",
         "Thank you for being a part of our lives and for your warm support from afar."
       ],
       signature: "Sincerely, Hannah & Ben"
