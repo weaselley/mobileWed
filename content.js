@@ -157,7 +157,7 @@ window.cardContent = {
     en: {
       label: "REGISTRY",
       text: [
-        "For those who have kindly asked how to send a wedding gift,\nplease use Venmo (@hahahahp).",
+        "For those who have kindly asked how to send a wedding gift, please use Venmo (@hahahahp).",
         "If you visit Korea, please let us know in advance!"
       ],
       id: "@hahahahp",
