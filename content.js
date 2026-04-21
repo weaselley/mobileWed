@@ -68,7 +68,7 @@ window.cardContent = {
       intro: "Dear Everyone,",
       paragraphs: [
         "We are so happy to have found our lifelong partners in one another.",
-        "While it is our deepest wish\nto celebrate this joyous occasion\nwith all those who have supported us,\nwe have decided to hold an intimate ceremony\nwith our family.",
+        "While it is our deepest wish to celebrate this joyous occasion with all those who have supported us, we have decided to hold an intimate ceremony with our family.",
         "Thank you for being a part of our lives and for your warm support from afar."
       ],
       signature: "Sincerely, Hannah & Ben"
