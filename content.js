@@ -27,7 +27,7 @@ window.cardContent = {
         en: "Done"
       },
       toast: {
-        ko: "복사되었습니다.",
+        ko: "복사되었습니다!",
         en: "Copied!"
       }
     }
