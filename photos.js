@@ -3,10 +3,8 @@ window.cardPhotos = {
     default: "assets/photos/hero/hero.jpg"
   },
   about: [
-    "assets/photos/about/about-01.png",
-    "assets/photos/about/about-02.png"
-    // "assets/photos/about/hannah_gemini.png",
-    // "assets/photos/about/ben_gemini.png"
+    "assets/photos/about/about-ben.png",
+    "assets/photos/about/about-hannah.png"
   ],
   gallery: [
     { thumb: "assets/photos/gallery/thumbs/gallery-01.webp", resized: "assets/photos/gallery/resize/gallery-01.webp", full: "assets/photos/gallery/full/gallery-01.jpg" },
