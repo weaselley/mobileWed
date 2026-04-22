@@ -51,9 +51,9 @@ body.is-ko .en{display:none!important}
 .slabel{font-family:'Gowun Dodum',sans-serif;font-size:1.45rem;font-weight:700;letter-spacing:.3em;color:#a68345;margin-bottom:2.5rem;display:block;}
 
 /* BODY TEXT */
-.body-ko{font-family:'Gowun Batang',serif;font-weight:700;font-size:1.1rem;line-height:2.1;color:#222;}
+.body-ko{font-family:'Gowun Batang',serif;font-weight:700;font-size:1.1rem;line-height:2.1;color:#111;}
 .body-ko+.body-ko{margin-top:1.4rem;}
-.body-en{font-family:'Lora',serif;font-weight:500;font-size:1.1rem;line-height:2.0;color:#222;}
+.body-en{font-family:'Lora',serif;font-weight:500;font-size:1.1rem;line-height:2.0;color:#111;}
 .body-en+.body-en{margin-top:1.4rem;}
 .sig{margin-top:3.5rem;font-family:'Gowun Batang',serif;font-weight:700;font-size:1.1rem;color:#111;line-height:1.9;}
 .rings-orn{display:flex;justify-content:center;margin-bottom:2.2rem;}
@@ -197,7 +197,7 @@ body.is-en .more-btn[data-state="less"] .is-less.en{display:flex!important;}
 .is-en .wform-title{font-family:'Playfair Display',serif;font-style:italic;font-weight:600;font-size:1.2rem;}
 .ff{display:flex;flex-direction:column;gap:.8rem;margin-bottom:1.8rem;}
 .ff--compact-top{margin-top:.8rem;}
-.ff label{font-family:'Gowun Dodum',sans-serif;font-size:.95rem;font-weight:700;color:#555;}
+.ff label{font-family:'Gowun Dodum',sans-serif;font-size:.95rem;font-weight:700;color:#111;}
 .is-en .ff label{font-family:'Lora',serif;font-size:1.05rem;font-weight:500;}
 .ff input,.ff textarea{background:#faf8f5;border:1px solid rgba(0,0,0,.1);border-radius:10px;padding:1.1rem;font-family:'Gowun Dodum',sans-serif;font-size:1.1rem;font-weight:700;color:#111;outline:none;width:100%;transition:border-color .2s;}
 .ff textarea{resize:vertical;min-height:120px;}
