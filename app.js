@@ -619,6 +619,16 @@ function initContent() {
   setText("accGroomName", cardContent.gifts.ko.groom.name);
   setText("accGroomCopyBtn", cardContent.gifts.ko.groom.button);
   els.get("accGroomCopyBtn").dataset.copyValue = cardContent.gifts.ko.groom.number;
+  setText("accGroomExtraBank", cardContent.gifts.ko.groomExtra.bank);
+  setText("accGroomExtraNumber", cardContent.gifts.ko.groomExtra.number);
+  setText("accGroomExtraName", cardContent.gifts.ko.groomExtra.name);
+  setText("accGroomExtraCopyBtn", cardContent.gifts.ko.groomExtra.button);
+  var groomExtraRow = els.get("accGroomExtraRow");
+  var groomExtraNumber = cardContent.gifts.ko.groomExtra.number || "";
+  if (groomExtraRow) groomExtraRow.style.display = groomExtraNumber ? "flex" : "none";
+  if (els.get("accGroomExtraCopyBtn")) {
+    els.get("accGroomExtraCopyBtn").dataset.copyValue = groomExtraNumber;
+  }
 
   setText("giftLabelEn", cardContent.gifts.en.label);
   setText("giftTitleEn", cardContent.gifts.en.title);
@@ -969,6 +979,7 @@ function toggleAccordion(e) {
 function initGifts() {
   bindCopyButton("accBrideCopyBtn");
   bindCopyButton("accGroomCopyBtn");
+  bindCopyButton("accGroomExtraCopyBtn");
   bindCopyButton("venmoCopyBtn");
 }
 

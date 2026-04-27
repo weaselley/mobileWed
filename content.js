@@ -141,16 +141,22 @@ window.cardContent = {
       label: "마음 전하실 곳",
       bride: {
         head: "신부측 계좌번호",
-        bank: "카카오뱅크",
-        number: "3333-22-7932584",
+        bank: "NH농협은행",
+        number: "302-2069-1972-31",
         name: "박현지",
         button: "복사"
       },
       groom: {
         head: "신랑측 계좌번호",
-        bank: "신한은행",
-        number: "110-254-413794",
+        bank: "카카오뱅크",
+        number: "3333-16-3502373",
         name: "김병헌",
+        button: "복사"
+      },
+      groomExtra: {
+        bank: "국민은행",
+        number: "618701-04-122111",
+        name: "김광열",
         button: "복사"
       }
     },
